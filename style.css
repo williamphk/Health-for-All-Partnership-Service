@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 .hero {
   background: url("images/hero-bg.png") no-repeat center center;
   background-size: cover;
@@ -11,4 +13,9 @@
 
 .data {
   background-color: #073d41;
+}
+
+p {
+  font-size: 21px;
+  font-family: "Inter", sans-serif;
 }
