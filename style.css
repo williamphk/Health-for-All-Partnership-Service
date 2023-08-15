@@ -1,0 +1,10 @@
+.hero {
+  background: url("images/hero-bg.png") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 115px);
+  padding-top: 100px;
+}
+
+.ml-20 {
+  margin-left: 20%;
+}
