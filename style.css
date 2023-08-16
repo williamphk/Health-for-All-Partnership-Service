@@ -46,7 +46,7 @@ p {
 }
 
 .wrapper i {
-  top: 2000px;
+  top: 2100px;
   z-index: 999;
   height: 50px;
   width: 50px;
@@ -66,9 +66,6 @@ p {
 }
 .wrapper i:first-child {
   left: -22px;
-}
-.wrapper i:last-child {
-  right: -22px;
 }
 
 .testi {
