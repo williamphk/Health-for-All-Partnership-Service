@@ -46,7 +46,8 @@ p {
 }
 
 .wrapper i {
-  top: 50%;
+  top: 1850px;
+  z-index: 999;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -93,7 +94,7 @@ p {
   scrollbar-width: none;
   background: linear-gradient(to top, #063b3f, #f3fbfc);
   width: 100%;
-  height: 807px;
+  height: 607px;
 }
 .carousel::-webkit-scrollbar {
   display: none;
