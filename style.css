@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter:wght@300;400&family=Raleway:wght@700&display=swap");
 
 .hero {
   background: url("images/hero-bg.png") no-repeat center center;
@@ -18,4 +22,231 @@
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+.wrapper {
+  padding-top: 100px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper p {
+  color: #fff;
+  margin: 20px;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+
+.testi {
+  margin-left: 200px;
+  width: 923px;
+  height: 56px;
+  text-align: center;
+}
+
+#testimonials {
+  color: #031d1f;
+  font-family: "Raleway";
+  font-size: xx-large;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  background: linear-gradient(to top, #063b3f, #f3fbfc);
+  width: 1512px;
+  height: 807px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 523.81px;
+  width: 300.1px;
+  list-style: none;
+  background: linear-gradient(to top, #174d51, #fbfcfc);
+  cursor: pointer;
+  padding-top: 25px;
+  flex-direction: column;
+  border-radius: 11px;
+  text-align: center;
+}
+
+.card .img img {
+  width: 298.71px;
+  height: 298.71px;
+  object-fit: cover;
+  margin-top: -140px;
+  margin-bottom: 40px;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6a6d78;
+  font-size: 1.31rem;
+}
+
+.faq {
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+  width: 1238.18px;
+  height: 451px;
+}
+
+#titles {
+  display: flex;
+  width: 600px;
+  margin-left: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#titles a:hover {
+  font-family: "Raleway";
+}
+
+.faq-q {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 600px;
+  margin-left: 300px;
+}
+
+#faq-table {
+  display: none;
+}
+
+.patients_faq {
+  background-color: #fff;
+}
+.volunteer_faq {
+  background-color: #fff;
+}
+.org_faq {
+  background-color: #fff;
+}
+.provider_faq {
+  background-color: #fff;
+}
+
+#faq-q-org {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+#faq-q-patient {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+#faq-q-volunteer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+#faq-q-provider {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+
+#org {
+  text-decoration: none;
+  cursor: pointer;
+  color: #031d1f;
+}
+
+#patient {
+  cursor: pointer;
+  text-decoration: none;
+  color: #031d1f;
+}
+#volunteer {
+  cursor: pointer;
+  text-decoration: none;
+  color: #031d1f;
+}
+#provider {
+  cursor: pointer;
+  text-decoration: none;
+  color: #031d1f;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
