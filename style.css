@@ -92,7 +92,7 @@ p {
   scroll-behavior: smooth;
   scrollbar-width: none;
   background: linear-gradient(to top, #063b3f, #f3fbfc);
-  width: 1512px;
+  width: 100%;
   height: 807px;
 }
 .carousel::-webkit-scrollbar {
