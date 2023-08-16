@@ -149,13 +149,13 @@ p {
   margin-top: 50px;
   text-align: center;
   align-items: center;
-  width: 1238.18px;
+  width: 100%;
   height: 451px;
 }
 
 #titles {
   display: flex;
-  width: 600px;
+  width: 60%;
   margin-left: 300px;
   margin-top: 30px;
   margin-bottom: 30px;
