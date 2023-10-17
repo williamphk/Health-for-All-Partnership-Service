@@ -4,11 +4,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter:wght@300;400&family=Raleway:wght@700&display=swap");
 
+header {
+  position: absolute;
+  top: 0;
+}
+
+header > div:first-child {
+  background-color: hsla(0, 0%, 100%, 0.701);
+  border-radius: 93px;
+}
+
+header > div:first-child button.btn {
+  border-radius: 25px;
+  background-color: #063b3f;
+  color: #fff;
+  width: 180px;
+  text-wrap: wrap;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgb(209, 209, 209);
+}
+
+.dropdown-menu {
+  border-radius: 25px;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.share-btn {
+  background-color: #ffffff40;
+  color: black;
+  border-radius: 21px;
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.search-btn {
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.login-btn {
+  width: 100%;
+  font-size: 20px;
+}
+
 .hero {
-  background: url("images/hero-bg.png") no-repeat center center;
+  height: 100vh;
+  background-image: linear-gradient(
+      330deg,
+      rgba(14, 104, 111, 0) 30%,
+      rgba(7, 62, 66, 0.92) 100%
+    ),
+    url("images/hero-bg.png");
   background-size: cover;
-  height: calc(100vh - 115px);
-  padding-top: 100px;
+  padding-top: 250px;
+}
+
+.hero > div {
+  margin-left: 10%;
+}
+
+.cta-btn {
+  background-color: #65c5b9;
+  width: 355px;
+  border-radius: 33.28px;
+}
+
+.service-image-wrapper {
+  margin-top: 150px;
 }
 
 .ml-20 {
@@ -17,6 +94,13 @@
 
 .data {
   background-color: #073d41;
+}
+
+.services {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 p {
@@ -32,21 +116,28 @@ p {
 }
 
 .wrapper {
-  padding-top: 100px;
+  background: linear-gradient(to top, #063b3f, #d6efeb, #f3fbfc);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper a {
   text-decoration: none;
   color: #fff;
+  font-size: 24px;
 }
 
 .wrapper p {
   color: #fff;
   margin: 20px;
+  font-size: 24px;
 }
 
 .wrapper i {
-  top: 2100px;
+  top: 2400px;
   z-index: 999;
   height: 50px;
   width: 50px;
@@ -61,6 +152,13 @@ p {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
+.wrapper i#right {
+  right: 0;
+}
+.wrapper i#left {
+  left: 0;
+}
+
 .wrapper i:active {
   transform: translateY(-50%) scale(0.85);
 }
@@ -69,10 +167,9 @@ p {
 }
 
 .testi {
-  margin-left: 200px;
-  width: 923px;
   height: 56px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 #testimonials {
@@ -89,7 +186,7 @@ p {
   gap: 16px;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  background: linear-gradient(to top, #063b3f, #f3fbfc);
+
   width: 100%;
   height: 607px;
 }
@@ -107,30 +204,28 @@ p {
   cursor: grab;
   user-select: none;
 }
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .carousel .card {
   scroll-snap-align: start;
   height: 523.81px;
   width: 300.1px;
   list-style: none;
-  background: linear-gradient(to top, #174d51, #fbfcfc);
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   padding-top: 25px;
   flex-direction: column;
   border-radius: 11px;
   text-align: center;
+  border: none;
 }
 
 .card .img img {
   width: 298.71px;
   height: 298.71px;
   object-fit: cover;
-  margin-top: -140px;
   margin-bottom: 40px;
+  border-radius: 19px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .carousel .card h2 {
   font-weight: 500;
@@ -235,6 +330,10 @@ p {
   cursor: pointer;
   text-decoration: none;
   color: #031d1f;
+}
+
+footer {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 900px) {
