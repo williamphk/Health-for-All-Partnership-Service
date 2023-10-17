@@ -23,13 +23,18 @@ header > div:first-child button.btn {
   font-weight: 700;
 }
 
+header > div:first-child button.btn:hover {
+  background-color: #09565b;
+  cursor: pointer;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgb(209, 209, 209);
+  color: #d1d1d1;
 }
 
 .dropdown-menu {
@@ -60,6 +65,13 @@ header > div:first-child button.btn {
 .login-btn {
   width: 100%;
   font-size: 20px;
+}
+
+.share-btn:hover,
+.search-btn:hover,
+.login-btn:hover {
+  cursor: pointer;
+  color: #666666;
 }
 
 .hero {
