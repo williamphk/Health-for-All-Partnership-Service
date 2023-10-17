@@ -75,7 +75,7 @@ header > div:first-child button.btn:hover {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
       330deg,
       rgba(14, 104, 111, 0) 30%,
@@ -84,10 +84,6 @@ header > div:first-child button.btn:hover {
     url("images/hero-bg.png");
   background-size: cover;
   padding-top: 250px;
-}
-
-.hero > div {
-  margin-left: 10%;
 }
 
 .cta-btn {
@@ -109,7 +105,7 @@ header > div:first-child button.btn:hover {
 }
 
 .services {
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -129,7 +125,7 @@ p {
 
 .wrapper {
   background: linear-gradient(to top, #063b3f, #d6efeb, #f3fbfc);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
