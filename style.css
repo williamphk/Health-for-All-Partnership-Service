@@ -28,6 +28,12 @@ header > div:first-child button.btn:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 992px) {
+  .logo {
+    height: 40px;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
@@ -86,6 +92,12 @@ header > div:first-child button.btn:hover {
   padding-top: 250px;
 }
 
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding-top: 150px;
+  }
+}
+
 .hero > div {
   margin-left: 10%;
   margin-top: 5%;
@@ -94,6 +106,7 @@ header > div:first-child button.btn:hover {
 @media only screen and (max-width: 992px) {
   .hero > div {
     margin-left: 0;
+    margin-top: 2%;
   }
 }
 
@@ -236,6 +249,12 @@ p {
   border-radius: 11px;
   text-align: center;
   border: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    padding-left: 12%;
+  }
 }
 
 .card .img img {
