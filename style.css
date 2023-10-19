@@ -154,6 +154,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .wrapper a {
@@ -169,7 +170,7 @@ p {
 }
 
 .wrapper i {
-  top: 2400px;
+  top: 400px;
   z-index: 999;
   height: 50px;
   width: 50px;
@@ -184,6 +185,7 @@ p {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
+
 .wrapper i#right {
   right: 0;
 }
@@ -374,14 +376,20 @@ footer {
   font-size: 20px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer img {
+    height: 45px;
   }
 }
