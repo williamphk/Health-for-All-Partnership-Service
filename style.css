@@ -170,7 +170,7 @@ p {
 }
 
 .wrapper i {
-  top: 400px;
+  top: 430px;
   z-index: 999;
   height: 50px;
   width: 50px;
@@ -251,12 +251,7 @@ p {
   border-radius: 11px;
   text-align: center;
   border: none;
-}
-
-@media only screen and (max-width: 992px) {
-  .card {
-    padding-left: 12%;
-  }
+  padding-left: 10%;
 }
 
 .card .img img {
@@ -376,13 +371,19 @@ footer {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 630px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
