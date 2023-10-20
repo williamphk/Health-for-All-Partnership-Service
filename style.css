@@ -242,7 +242,6 @@ p {
 .carousel .card {
   scroll-snap-align: start;
   height: 523.81px;
-  width: 300.1px;
   list-style: none;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -251,7 +250,6 @@ p {
   border-radius: 11px;
   text-align: center;
   border: none;
-  padding-left: 10%;
 }
 
 .card .img img {
