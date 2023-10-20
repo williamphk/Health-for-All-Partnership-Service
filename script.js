@@ -93,32 +93,32 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-document.getElementById("org").addEventListener("click", () => {
-  document.getElementById("faq-table").style.display = "block";
-  document.getElementById("faq-q-org").style.display = "flex";
-  document.getElementById("faq-q-patient").style.display = "none";
-  document.getElementById("faq-q-volunteer").style.display = "none";
-  document.getElementById("faq-q-provider").style.display = "none";
-});
+// document.getElementById("org").addEventListener("click", () => {
+//   document.getElementById("faq-table").style.display = "block";
+//   document.getElementById("faq-q-org").style.display = "flex";
+//   document.getElementById("faq-q-patient").style.display = "none";
+//   document.getElementById("faq-q-volunteer").style.display = "none";
+//   document.getElementById("faq-q-provider").style.display = "none";
+// });
 
-document.getElementById("patient").addEventListener("click", () => {
-  document.getElementById("faq-table").style.display = "block";
-  document.getElementById("faq-q-org").style.display = "none";
-  document.getElementById("faq-q-patient").style.display = "flex";
-  document.getElementById("faq-q-volunteer").style.display = "none";
-  document.getElementById("faq-q-provider").style.display = "none";
-});
-document.getElementById("volunteer").addEventListener("click", () => {
-  document.getElementById("faq-table").style.display = "block";
-  document.getElementById("faq-q-org").style.display = "none";
-  document.getElementById("faq-q-patient").style.display = "none";
-  document.getElementById("faq-q-volunteer").style.display = "flex";
-  document.getElementById("faq-q-provider").style.display = "none";
-});
-document.getElementById("provider").addEventListener("click", () => {
-  document.getElementById("faq-table").style.display = "block";
-  document.getElementById("faq-q-org").style.display = "none";
-  document.getElementById("faq-q-patient").style.display = "none";
-  document.getElementById("faq-q-volunteer").style.display = "none";
-  document.getElementById("faq-q-provider").style.display = "flex";
-});
+// document.getElementById("patient").addEventListener("click", () => {
+//   document.getElementById("faq-table").style.display = "block";
+//   document.getElementById("faq-q-org").style.display = "none";
+//   document.getElementById("faq-q-patient").style.display = "flex";
+//   document.getElementById("faq-q-volunteer").style.display = "none";
+//   document.getElementById("faq-q-provider").style.display = "none";
+// });
+// document.getElementById("volunteer").addEventListener("click", () => {
+//   document.getElementById("faq-table").style.display = "block";
+//   document.getElementById("faq-q-org").style.display = "none";
+//   document.getElementById("faq-q-patient").style.display = "none";
+//   document.getElementById("faq-q-volunteer").style.display = "flex";
+//   document.getElementById("faq-q-provider").style.display = "none";
+// });
+// document.getElementById("provider").addEventListener("click", () => {
+//   document.getElementById("faq-table").style.display = "block";
+//   document.getElementById("faq-q-org").style.display = "none";
+//   document.getElementById("faq-q-patient").style.display = "none";
+//   document.getElementById("faq-q-volunteer").style.display = "none";
+//   document.getElementById("faq-q-provider").style.display = "flex";
+// });
