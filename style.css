@@ -226,7 +226,7 @@ p {
   grid-auto-columns: calc((100% / 4));
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 16px;
+  /* gap: 16px; */
   scroll-behavior: smooth;
   scrollbar-width: none;
 
