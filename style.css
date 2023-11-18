@@ -9,6 +9,10 @@ header {
   top: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 header > div:first-child {
   background-color: hsla(0, 0%, 100%, 0.701);
   border-radius: 93px;
@@ -55,12 +59,13 @@ header > div:first-child button.btn:hover {
   background-color: #ffffff40;
   color: black;
   border-radius: 21px;
-  width: 175px;
+  width: 170px;
   border: none;
   font-weight: 700;
   padding: 10px;
   font-size: 20px;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .search-btn {
@@ -86,7 +91,7 @@ header > div:first-child button.btn:hover {
 
 @keyframes wider {
   0% {
-    width: 175px;
+    width: 170px;
     font-size: 20px;
   }
 
@@ -102,13 +107,13 @@ header > div:first-child button.btn:hover {
     font-size: 15px;
   }
   100% {
-    width: 175px;
+    width: 170px;
     font-size: 20px;
   }
 }
 
 .share-btn.reverse {
-  animation: narrower 0.75s forwards;
+  animation: narrower 0.5s forwards;
 }
 
 #mobile-menu {
