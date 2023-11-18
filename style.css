@@ -55,7 +55,7 @@ header > div:first-child button.btn:hover {
   background-color: #ffffff40;
   color: black;
   border-radius: 21px;
-  width: 100%;
+  width: 175px;
   border: none;
   font-weight: 700;
   padding: 10px;
@@ -78,6 +78,37 @@ header > div:first-child button.btn:hover {
 .login-btn:hover {
   cursor: pointer;
   color: #666666;
+}
+
+.share-btn:hover {
+  animation: wider 0.75s forwards;
+}
+
+@keyframes wider {
+  0% {
+    width: 175px;
+    font-size: 20px;
+  }
+
+  100% {
+    width: 250px;
+    font-size: 15px;
+  }
+}
+
+@keyframes narrower {
+  0% {
+    width: 250px;
+    font-size: 15px;
+  }
+  100% {
+    width: 175px;
+    font-size: 20px;
+  }
+}
+
+.share-btn.reverse {
+  animation: narrower 0.75s forwards;
 }
 
 #mobile-menu {
