@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter:wght@300;400&family=Raleway:wght@700&display=swap");
+
+header {
+  position: absolute;
+  top: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header > div:first-child {
+  background-color: hsla(0, 0%, 100%, 0.701);
+  border-radius: 93px;
+}
+
+header > div:first-child button.btn {
+  border-radius: 25px;
+  background-color: #1d617a;
+  color: #fff;
+  width: 180px;
+  text-wrap: wrap;
+  font-weight: 700;
+}
+
+header > div:first-child button.btn:hover {
+  background-color: rgb(6, 67, 71);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo {
+    height: 40px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #d1d1d1;
+}
+
+.dropdown-menu {
+  border-radius: 11px;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.share-btn {
+  background-color: #ffffff40;
+  color: black;
+  border-radius: 21px;
+  width: 170px;
+  border: none;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 50px;
+}
+
+.search-btn {
+  white-space: nowrap;
+  font-size: 20px;
+  width: 100px;
+  height: 25px;
+  color: #ffffff;
+}
+
+.login-btn {
+  white-space: nowrap;
+  font-size: 20px;
+  width: 170px;
+  height: 25px;
+  color: #ffffff;
+}
+
+.search-btn:hover,
+.login-btn:hover {
+  cursor: pointer;
+  color: #555555;
+}
+
+.share-btn:hover {
+  animation: wider 0.75s forwards;
+}
+
+@keyframes wider {
+  0% {
+    width: 170px;
+    font-size: 20px;
+  }
+
+  100% {
+    width: 250px;
+    font-size: 15px;
+  }
+}
+
+@keyframes narrower {
+  0% {
+    width: 250px;
+    font-size: 15px;
+  }
+  100% {
+    width: 170px;
+    font-size: 20px;
+  }
+}
+
+.share-btn.reverse {
+  animation: narrower 0.5s forwards;
+}
+
+#mobile-menu {
+  background-color: #09565b;
+}
+
+#navbarToggleExternalContent > div {
+  z-index: 999;
+  background-color: #031d1fe2;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(14, 104, 111, 0) 30%,
+      rgba(7, 62, 66, 0.92) 100%
+    ),
+    url("images/about-bg.png");
+  background-size: cover;
+  padding-top: 250px;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding-top: 120px;
+  }
+}
+
+.hero > div {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > div > h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero > div {
+    margin-left: 0;
+    margin-top: 2%;
+  }
+}
+
+.cta-btn {
+  background-color: #65c5b9;
+  width: 355px;
+  border-radius: 33.28px;
+}
+
+.service-image-wrapper {
+  margin-top: 150px;
+}
+
+.ml-20 {
+  margin-left: 20%;
+}
+
+.data {
+  background-color: #073d41;
+}
+
+.services {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+p {
+  font-size: 21px;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+.wrapper {
+  background: linear-gradient(to top, #063b3f, #d6efeb, #f3fbfc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.wrapper p {
+  color: #fff;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.wrapper i {
+  top: 430px;
+  z-index: 999;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i#right {
+  right: 0;
+}
+.wrapper i#left {
+  left: 0;
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+
+.testi {
+  height: 56px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#testimonials {
+  color: #031d1f;
+  font-family: "Raleway";
+  font-size: xx-large;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* gap: 16px; */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  width: 100%;
+  height: 607px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 523.81px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  padding-top: 25px;
+  flex-direction: column;
+  border-radius: 11px;
+  text-align: center;
+  border: none;
+}
+
+.card .img img {
+  width: 298.71px;
+  height: 298.71px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border-radius: 19px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6a6d78;
+  font-size: 1.31rem;
+}
+
+.faq {
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 451px;
+}
+
+#titles {
+  display: flex;
+  width: 70%;
+  margin-left: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#titles a:hover {
+  font-family: "Raleway";
+}
+
+.faq-q {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 600px;
+  margin-left: 300px;
+}
+
+#faq-table {
+  display: none;
+}
+
+.patients_faq {
+  background-color: #fff;
+}
+.volunteer_faq {
+  background-color: #fff;
+}
+.org_faq {
+  background-color: #fff;
+}
+.provider_faq {
+  background-color: #fff;
+}
+
+#faq-q-org {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+#faq-q-patient {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+#faq-q-volunteer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+#faq-q-provider {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 300px;
+}
+
+#org {
+  text-decoration: none;
+  cursor: pointer;
+  color: #031d1f;
+}
+
+#patient {
+  cursor: pointer;
+  text-decoration: none;
+  color: #031d1f;
+}
+#volunteer {
+  cursor: pointer;
+  text-decoration: none;
+  color: #031d1f;
+}
+#provider {
+  cursor: pointer;
+  text-decoration: none;
+  color: #031d1f;
+}
+
+footer {
+  font-size: 20px;
+}
+
+.people-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.people-icon img {
+  height: 65px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  footer img {
+    height: 55px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer img {
+    height: 45px;
+  }
+}
