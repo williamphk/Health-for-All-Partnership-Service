@@ -66,23 +66,29 @@ header > div:first-child button.btn:hover {
   font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
+  height: 50px;
 }
 
 .search-btn {
   white-space: nowrap;
   font-size: 20px;
+  width: 100px;
+  height: 25px;
+  color: #ffffff;
 }
 
 .login-btn {
-  width: 100%;
+  white-space: nowrap;
   font-size: 20px;
+  width: 170px;
+  height: 25px;
+  color: #ffffff;
 }
 
-.share-btn:hover,
 .search-btn:hover,
 .login-btn:hover {
   cursor: pointer;
-  color: #666666;
+  color: #555555;
 }
 
 .share-btn:hover {
