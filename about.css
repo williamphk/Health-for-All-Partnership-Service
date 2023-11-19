@@ -210,7 +210,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #0f6d74;
   font-size: 26px;
   font-weight: 700;
   cursor: pointer;
@@ -223,10 +223,20 @@ p {
   top: 0;
   bottom: 0;
   width: 50%;
-  background: #0f6d74;
+  background: #c2d0d1;
   transform-origin: bottom;
   z-index: -1;
 }
+
+.active {
+  color: #c2d0d1;
+}
+
+.active.trapezoid::before,
+.active.trapezoid::after {
+  background: #0f6d74;
+}
+
 .trapezoid::before {
   border-radius: 15px 0 0 15px;
   border-right: 0;
