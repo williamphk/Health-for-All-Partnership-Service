@@ -190,6 +190,63 @@ p {
   font-family: "Inter";
 }
 
+.who {
+  height: 100vh;
+  position: relative;
+  top: -80px;
+  z-index: 1;
+}
+
+.trapezoid-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.trapezoid {
+  width: 468.96px;
+  height: 92px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.trapezoid::before,
+.trapezoid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: #0f6d74;
+  transform-origin: bottom;
+  z-index: -1;
+}
+.trapezoid::before {
+  border-radius: 15px 0 0 15px;
+  border-right: 0;
+  left: 0;
+  transform: skew(-20deg);
+}
+.trapezoid::after {
+  border-radius: 0 15px 15px 0;
+  border-left: 0;
+  right: 0;
+  transform: skew(20deg);
+}
+
+.who-content {
+  height: 100%;
+  background-color: #0f6d74;
+  position: relative;
+  top: -12px;
+}
+
 footer {
   font-size: 20px;
 }
