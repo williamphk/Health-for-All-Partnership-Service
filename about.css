@@ -263,6 +263,22 @@ p {
   top: -80px;
 }
 
+.contact {
+  position: relative;
+  height: 490px;
+  top: -80px;
+  background: linear-gradient(to top, #063b3f8c, #d6efeb, #ffffff);
+}
+
+.contact-img {
+  height: 136px;
+  width: 136px;
+  padding: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+}
+
 footer {
   font-size: 20px;
 }
