@@ -2,7 +2,6 @@ const shareButton = document.querySelector(".share-btn");
 const paragraphWrapper = document.querySelector(".paragraph-wrapper");
 const title = document.querySelector(".title");
 const main = document.querySelector("main");
-const affordability = document.querySelector(".affordability");
 const contact = document.querySelector(".contact");
 
 shareButton.addEventListener("mouseleave", () => {
@@ -27,6 +26,7 @@ for (let i = 0; i < trapezoids.length; i++) {
     const whoContent = document.querySelector(".who-content");
     //remove only children
     whoContent.innerHTML = "";
+    const affordability = document.querySelector(".affordability");
 
     //add paragraph
     if (i === 0) {
@@ -115,8 +115,7 @@ for (let i = 0; i < trapezoids.length; i++) {
 
       //  recreate the html structure below who section after removing the children
 
-      main.removeChild(affordability);
-
+      affordability.parentElement.removeChild(affordability);
       const newaffordability = document.createElement("section");
       newaffordability.classList.add(
         "affordability",
@@ -351,6 +350,70 @@ for (let i = 0; i < trapezoids.length; i++) {
       paragraph3.innerText =
         "By working together, we can reach people who may encounter obstacles when it comes to accessing healthcare. Our collaborative efforts ensure that no one is left behind.";
       col6.appendChild(paragraph3);
+
+      // <section
+      //   class="affordability row d-flex justify-content-center align-items-center px-5 mx-5"
+      // >
+      //   <div class="col-md-4">
+      //     <img
+      //       src="images/about_funding.png"
+      //       alt="affordability"
+      //       class="img-fluid"
+      //     />
+      //   </div>
+      //   <div class="col-md-5">
+      //     <h2 class="py-5 px-5">FUNDING</h2>
+      //     <p class="px-5">
+      //       We rely on the generous donations of individuals, organizations, and
+      //       government support to keep our goal of delivering accessible
+      //       healthcare alive. Your gift, together with government assistance,
+      //       allows us to continue our commitment to promoting health for all. We
+      //       can have a tremendous impact on the well-being of our community if
+      //       we work together.
+      //     </p>
+      //   </div>
+      // </section>
+
+      //  recreate the html structure below who section after removing the children
+
+      affordability.parentElement.removeChild(affordability);
+
+      const newaffordability = document.createElement("section");
+      newaffordability.classList.add(
+        "affordability",
+        "row",
+        "d-flex",
+        "justify-content-center",
+        "align-items-center",
+        "px-5",
+        "mx-5"
+      );
+      main.insertBefore(newaffordability, contact);
+
+      const funding_col1 = document.createElement("div");
+      funding_col1.classList.add("col-md-4");
+      newaffordability.appendChild(funding_col1);
+
+      const funding_img1 = document.createElement("img");
+      funding_img1.classList.add("img-fluid");
+      funding_img1.src = "images/about_funding.png";
+      funding_img1.alt = "affordability";
+      funding_col1.appendChild(funding_img1);
+
+      const funding_col2 = document.createElement("div");
+      funding_col2.classList.add("col-md-5");
+      newaffordability.appendChild(funding_col2);
+
+      const subTitle = document.createElement("h2");
+      subTitle.classList.add("py-5", "px-5");
+      subTitle.innerText = "FUNDING";
+      funding_col2.appendChild(subTitle);
+
+      const paragraph = document.createElement("p");
+      paragraph.classList.add("px-5");
+      paragraph.innerText =
+        "We rely on the generous donations of individuals, organizations, and government support to keep our goal of delivering accessible healthcare alive. Your gift, together with government assistance, allows us to continue our commitment to promoting health for all. We can have a tremendous impact on the well-being of our community if we work together.";
+      funding_col2.appendChild(paragraph);
     }
   });
 }
