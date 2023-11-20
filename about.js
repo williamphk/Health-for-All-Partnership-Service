@@ -1,5 +1,6 @@
 const shareButton = document.querySelector(".share-btn");
-const whoContent = document.querySelector(".who-content");
+const paragraphWrapper = document.querySelector(".paragraph-wrapper");
+const title = document.querySelector(".title");
 
 shareButton.addEventListener("mouseleave", () => {
   shareButton.classList.add("reverse");
@@ -20,46 +21,135 @@ for (let i = 0; i < trapezoids.length; i++) {
     trapezoids.forEach((t) => t.classList.remove("active"));
     trapezoid.classList.add("active");
 
-    const paragraphs = document.querySelectorAll(".paragraph");
-    //remove all paragraphs
-    paragraphs.forEach((paragraph) => {
-      paragraph.remove();
-    });
+    const whoContent = document.querySelector(".who-content");
+    //remove only children
+    whoContent.innerHTML = "";
 
     //add paragraph
     if (i === 0) {
+      //   <div class="who-content mb-5 text-white px-5">
+      //   <h2 class="py-5 text-center title">WHO WE ARE?</h2>
+      //   <div class="row px-5 content-wrapper">
+      //     <div class="paragraph-wrapper col-md-6">
+      //       <p class="paragraph px-5">
+      //         Health for All Partnership Clinic is committed to making
+      //         high-quality healthcare services available to all people,
+      //         regardless of their background or financial situation.
+      //       </p>
+      //       <p class="paragraph px-5">
+      //         We at Health for All believe that excellent health is a basic
+      //         human right. Our clinic was founded with the goal of bridging
+      //         healthcare disparities and creating a friendly, inclusive
+      //         environment where everyone feels appreciated and cared for. We
+      //         endeavor to improve the health and well-being of our community
+      //         one patient at a time.
+      //       </p>
+      //     </div>
+      //     <img
+      //       src="images/about_who-we-are.png"
+      //       alt="who we are"
+      //       class="img-fluid col-md-6"
+      //     />
+      //   </div>
+      // </div>
+
+      //  recreate the html structure above after removing the children
+      const title = document.createElement("h2");
+
+      title.classList.add("py-5", "text-center");
+      title.innerText = "WHO WE ARE?";
+      whoContent.appendChild(title);
+
+      const row = document.createElement("div");
+      row.classList.add("row", "px-5");
+      whoContent.appendChild(row);
+
+      const paragraphWrapper = document.createElement("div");
+      paragraphWrapper.classList.add("col-md-6");
+      row.appendChild(paragraphWrapper);
+
       const paragraph1 = document.createElement("p");
-      paragraph1.classList.add("paragraph");
+      paragraph1.classList.add("px-5");
       paragraph1.innerText =
         "Health for All Partnership Clinic is committed to making high-quality healthcare services available to all people, regardless of their background or financial situation.";
-      whoContent.appendChild(paragraph1);
+      paragraphWrapper.appendChild(paragraph1);
+
       const paragraph2 = document.createElement("p");
-      paragraph2.classList.add("paragraph");
+      paragraph2.classList.add("px-5");
       paragraph2.innerText =
         "We at Health for All believe that excellent health is a basic human right. Our clinic was founded with the goal of bridging healthcare disparities and creating a friendly, inclusive environment where everyone feels appreciated and cared for. We endeavor to improve the health and well-being of our community one patient at a time.";
-      whoContent.appendChild(paragraph2);
+      paragraphWrapper.appendChild(paragraph2);
+
+      const img = document.createElement("img");
+      img.classList.add("img-fluid", "col-md-6");
+      img.src = "images/about_who-we-are.png";
+      img.alt = "who we are";
+      row.appendChild(img);
     } else if (i === 1) {
-      const paragraph1 = document.createElement("p");
-      paragraph1.classList.add("paragraph");
-      paragraph1.innerText =
+      //   <div class="who-content mb-5 text-white px-5">
+      //   <h2 class="py-5 text-center title">OUR SERVICES</h2>
+      //   <div
+      //     class="content-wrapper d-flex flex-column justify-content-center align-items-center"
+      //   >
+      //     <img
+      //       src="images/about_our-services.png"
+      //       alt="our services"
+      //       class="img-fluid mb-5 w-50"
+      //     />
+      //     <p class="paragraph w-50">
+      //       We provide complete medical services at Health for All Partnership
+      //       Clinic, including check-ups, treatments, and disease management.
+      //       Our staff is committed to providing compassionate and
+      //       patient-centered treatment. We make quality healthcare accessible
+      //       and cheap for everyone through health awareness activities and
+      //       modern technologies. Our top priority is your well-being.
+      //     </p>
+      //   </div>
+      // </div>
+
+      //  recreate the html structure above after removing the children
+
+      const title = document.createElement("h2");
+
+      title.classList.add("py-5", "text-center");
+      title.innerText = "OUR SERVICES";
+      whoContent.appendChild(title);
+
+      const contentWrapper = document.createElement("div");
+      contentWrapper.classList.add(
+        "d-flex",
+        "flex-column",
+        "justify-content-center",
+        "align-items-center"
+      );
+      whoContent.appendChild(contentWrapper);
+
+      const img = document.createElement("img");
+      img.classList.add("img-fluid", "mb-5", "w-50");
+      img.src = "images/about_our-services.png";
+      img.alt = "our services";
+      contentWrapper.appendChild(img);
+
+      const paragraph = document.createElement("p");
+      paragraph.classList.add("w-50");
+
+      paragraph.innerText =
         "We provide complete medical services at Health for All Partnership Clinic, including check-ups, treatments, and disease management. Our staff is committed to providing compassionate and patient-centered treatment. We make quality healthcare accessible and cheap for everyone through health awareness activities and modern technologies. Our top priority is your well-being.";
-      whoContent.appendChild(paragraph1);
+      contentWrapper.appendChild(paragraph);
     } else if (i === 2) {
+      title.innerText = "PARTNERSHIP STRATEGY";
       const paragraph1 = document.createElement("p");
-      paragraph1.classList.add("paragraph");
       paragraph1.innerText =
         "Through strategic collaborations, we hope to pool resources, skills, and information in order to produce comprehensive healthcare solutions that suit the different requirements of our community. We may enhance the range of services we provide by working with other healthcare facilities. ";
-      whoContent.appendChild(paragraph1);
+      paragraphWrapper.appendChild(paragraph1);
       const paragraph2 = document.createElement("p");
-      paragraph2.classList.add("paragraph");
       paragraph2.innerText =
         "Thanks to our partnerships with community organizations, we can carry out effective health awareness campaigns, educational programs, and preventive care initiatives.";
-      whoContent.appendChild(paragraph2);
+      paragraphWrapper.appendChild(paragraph2);
       const paragraph3 = document.createElement("p");
-      paragraph3.classList.add("paragraph");
       paragraph3.innerText =
         "By working together, we can reach people who may encounter obstacles when it comes to accessing healthcare. Our collaborative efforts ensure that no one is left behind.";
-      whoContent.appendChild(paragraph3);
+      paragraphWrapper.appendChild(paragraph3);
     }
   });
 }

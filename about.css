@@ -138,7 +138,7 @@ header > div:first-child button.btn:hover {
       rgba(14, 104, 111, 0) 30%,
       rgba(7, 62, 66, 0.92) 100%
     ),
-    url("images/about-bg.png");
+    url("images/about_bg.png");
   background-size: cover;
   padding-top: 250px;
 }
