@@ -137,19 +137,152 @@ for (let i = 0; i < trapezoids.length; i++) {
         "We provide complete medical services at Health for All Partnership Clinic, including check-ups, treatments, and disease management. Our staff is committed to providing compassionate and patient-centered treatment. We make quality healthcare accessible and cheap for everyone through health awareness activities and modern technologies. Our top priority is your well-being.";
       contentWrapper.appendChild(paragraph);
     } else if (i === 2) {
+      //   <div class="who-content mb-5 text-white px-5">
+      //   <h2 class="py-5 text-center">PARTNERSHIP STRATEGY</h2>
+      //   <div class="row gx-5 align-items-center justify-content-center my-5">
+      //     <div class="col-md-1">
+      //       <img
+      //         src="images/about_partnership-strategy1.png"
+      //         alt="partner-strategy"
+      //         class="img-fluid"
+      //       />
+      //     </div>
+      //     <div class="col-md-5">
+      //       <p>
+      //         Through strategic collaborations, we hope to pool resources,
+      //         skills, and information in order to produce comprehensive
+      //         healthcare solutions that suit the different requirements of our
+      //         community. We may enhance the range of services we provide by
+      //         working with other healthcare facilities.
+      //       </p>
+      //     </div>
+      //   </div>
+      //   <div class="row align-items-center justify-content-center my-5">
+      //     <div class="col-md-1">
+      //       <img
+      //         src="images/about_partnership-strategy2.png"
+      //         alt="partner-strategy"
+      //         class="img-fluid"
+      //       />
+      //     </div>
+      //     <div class="col-md-5">
+      //       <p>
+      //         Thanks to our partnerships with community organizations, we can
+      //         carry out effective health awareness campaigns, educational
+      //         programs, and preventive care initiatives.
+      //       </p>
+      //     </div>
+      //   </div>
+      //   <div class="row align-items-center justify-content-center my-5">
+      //     <div class="col-md-1">
+      //       <img
+      //         src="images/about_partnership-strategy3.png"
+      //         alt="partner-strategy"
+      //         class="img-fluid h-75"
+      //       />
+      //     </div>
+      //     <div class="col-md-5">
+      //       <p>
+      //         By working together, we can reach people who may encounter
+      //         obstacles when it comes to accessing healthcare. Our
+      //         collaborative efforts ensure that no one is left behind.
+      //       </p>
+      //     </div>
+      //   </div>
+      // </div>
+
+      //  recreate the html structure above after removing the children
+
+      const title = document.createElement("h2");
+
+      title.classList.add("py-5", "text-center");
       title.innerText = "PARTNERSHIP STRATEGY";
+      whoContent.appendChild(title);
+
+      const row1 = document.createElement("div");
+      row1.classList.add(
+        "row",
+        "gx-5",
+        "align-items-center",
+        "justify-content-center",
+        "my-5"
+      );
+      whoContent.appendChild(row1);
+
+      const col1 = document.createElement("div");
+      col1.classList.add("col-md-1");
+      row1.appendChild(col1);
+
+      const img1 = document.createElement("img");
+      img1.classList.add("img-fluid");
+      img1.src = "images/about_partnership-strategy1.png";
+      img1.alt = "partner-strategy";
+      col1.appendChild(img1);
+
+      const col2 = document.createElement("div");
+      col2.classList.add("col-md-5");
+      row1.appendChild(col2);
+
       const paragraph1 = document.createElement("p");
       paragraph1.innerText =
-        "Through strategic collaborations, we hope to pool resources, skills, and information in order to produce comprehensive healthcare solutions that suit the different requirements of our community. We may enhance the range of services we provide by working with other healthcare facilities. ";
-      paragraphWrapper.appendChild(paragraph1);
+        "Through strategic collaborations, we hope to pool resources, skills, and information in order to produce comprehensive healthcare solutions that suit the different requirements of our community. We may enhance the range of services we provide by working with other healthcare facilities.";
+      col2.appendChild(paragraph1);
+
+      const row2 = document.createElement("div");
+      row2.classList.add(
+        "row",
+        "align-items-center",
+        "justify-content-center",
+        "my-5"
+      );
+      whoContent.appendChild(row2);
+
+      const col3 = document.createElement("div");
+      col3.classList.add("col-md-1");
+      row2.appendChild(col3);
+
+      const img2 = document.createElement("img");
+      img2.classList.add("img-fluid");
+      img2.src = "images/about_partnership-strategy2.png";
+      img2.alt = "partner-strategy";
+      col3.appendChild(img2);
+
+      const col4 = document.createElement("div");
+      col4.classList.add("col-md-5");
+      row2.appendChild(col4);
+
       const paragraph2 = document.createElement("p");
       paragraph2.innerText =
         "Thanks to our partnerships with community organizations, we can carry out effective health awareness campaigns, educational programs, and preventive care initiatives.";
-      paragraphWrapper.appendChild(paragraph2);
+      col4.appendChild(paragraph2);
+
+      const row3 = document.createElement("div");
+      row3.classList.add(
+        "row",
+        "align-items-center",
+        "justify-content-center",
+        "my-5"
+      );
+      whoContent.appendChild(row3);
+
+      const col5 = document.createElement("div");
+      col5.classList.add("col-md-1");
+      row3.appendChild(col5);
+
+      const img3 = document.createElement("img");
+      img3.classList.add("img-fluid", "h-75");
+      img3.src = "images/about_partnership-strategy3.png";
+      img3.alt = "partner-strategy";
+      col5.appendChild(img3);
+
+      const col6 = document.createElement("div");
+      col6.classList.add("col-md-5");
+      row3.appendChild(col6);
+
       const paragraph3 = document.createElement("p");
       paragraph3.innerText =
         "By working together, we can reach people who may encounter obstacles when it comes to accessing healthcare. Our collaborative efforts ensure that no one is left behind.";
-      paragraphWrapper.appendChild(paragraph3);
+      col6.appendChild(paragraph3);
     }
   });
 }
