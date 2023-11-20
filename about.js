@@ -1,6 +1,9 @@
 const shareButton = document.querySelector(".share-btn");
 const paragraphWrapper = document.querySelector(".paragraph-wrapper");
 const title = document.querySelector(".title");
+const main = document.querySelector("main");
+const affordability = document.querySelector(".affordability");
+const contact = document.querySelector(".contact");
 
 shareButton.addEventListener("mouseleave", () => {
   shareButton.classList.add("reverse");
@@ -85,6 +88,71 @@ for (let i = 0; i < trapezoids.length; i++) {
       img.src = "images/about_who-we-are.png";
       img.alt = "who we are";
       row.appendChild(img);
+
+      //   <section
+      //   class="affordability row d-flex justify-content-center align-items-center px-5 mx-5"
+      // >
+      //   <div class="col-md-4">
+      //     <img
+      //       src="images/about_affordability.png"
+      //       alt="who we are"
+      //       class="img-fluid"
+      //     />
+      //   </div>
+      //   <div class="col-md-5">
+      //     <h2 class="py-5 px-5">AFFORDABILITY</h2>
+      //     <p class="px-5">
+      //       One of our guiding beliefs is that healthcare should be affordable
+      //       and accessible to everybody. We recognise the financial difficulties
+      //       that many people encounter, and we endeavour to provide services at
+      //       reasonable rates while also collaborating with various insurance
+      //       companies to reduce the financial load on our customers. Our
+      //       dedication to cost ensures that no one is denied necessary medical
+      //       treatment.
+      //     </p>
+      //   </div>
+      // </section>
+
+      //  recreate the html structure below who section after removing the children
+
+      main.removeChild(affordability);
+
+      const newaffordability = document.createElement("section");
+      newaffordability.classList.add(
+        "affordability",
+        "row",
+        "d-flex",
+        "justify-content-center",
+        "align-items-center",
+        "px-5",
+        "mx-5"
+      );
+      main.insertBefore(newaffordability, contact);
+
+      const col1 = document.createElement("div");
+      col1.classList.add("col-md-4");
+      newaffordability.appendChild(col1);
+
+      const img1 = document.createElement("img");
+      img1.classList.add("img-fluid");
+      img1.src = "images/about_affordability.png";
+      img1.alt = "who we are";
+      col1.appendChild(img1);
+
+      const col2 = document.createElement("div");
+      col2.classList.add("col-md-5");
+      newaffordability.appendChild(col2);
+
+      const subTitle = document.createElement("h2");
+      subTitle.classList.add("py-5", "px-5");
+      subTitle.innerText = "AFFORDABILITY";
+      col2.appendChild(subTitle);
+
+      const paragraph = document.createElement("p");
+      paragraph.classList.add("px-5");
+      paragraph.innerText =
+        "One of our guiding beliefs is that healthcare should be affordable and accessible to everybody. We recognise the financial difficulties that many people encounter, and we endeavour to provide services at reasonable rates while also collaborating with various insurance companies to reduce the financial load on our customers. Our dedication to cost ensures that no one is denied necessary medical treatment.";
+      col2.appendChild(paragraph);
     } else if (i === 1) {
       //   <div class="who-content mb-5 text-white px-5">
       //   <h2 class="py-5 text-center title">OUR SERVICES</h2>

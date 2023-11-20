@@ -199,7 +199,7 @@ p {
 }
 
 .wrapper {
-  background: linear-gradient(to top, #063b3f, #d6efeb, #f3fbfc);
+  background: linear-gradient(to top, #063b3fce, #d6efeb, #f3fbfc);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
