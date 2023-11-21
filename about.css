@@ -18,16 +18,19 @@ header > div:first-child {
   border-radius: 93px;
 }
 
-header > div:first-child button.btn {
+header > div:first-child a.btn {
   border-radius: 25px;
   background-color: #1d617a;
   color: #fff;
   width: 180px;
   text-wrap: wrap;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header > div:first-child button.btn:hover {
+header > div:first-child a.btn:hover {
   background-color: rgb(6, 67, 71);
   cursor: pointer;
 }
