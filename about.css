@@ -281,6 +281,7 @@ p {
   border-radius: 50%;
   display: inline-block;
   background-color: #fff;
+  margin: 25px;
 }
 
 footer {
