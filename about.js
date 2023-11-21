@@ -203,6 +203,214 @@ for (let i = 0; i < trapezoids.length; i++) {
       paragraph.innerText =
         "We provide complete medical services at Health for All Partnership Clinic, including check-ups, treatments, and disease management. Our staff is committed to providing compassionate and patient-centered treatment. We make quality healthcare accessible and cheap for everyone through health awareness activities and modern technologies. Our top priority is your well-being.";
       contentWrapper.appendChild(paragraph);
+
+      //   <section class="affordability px-5 mx-5 py-5">
+      //   <div class="row d-flex justify-content-center align-items-center">
+      //     <div
+      //       class="col-md-5 d-flex flex-column justify-content-center align-items-center"
+      //     >
+      //       <img
+      //         src="images/primary-healthcare.jpg"
+      //         alt="affordability"
+      //         class="img-fluid"
+      //       />
+      //       <h3 class="py-5 px-5">PRIMARY HEALTH CARE</h3>
+      //       <p class="px-5">
+      //         We rely on the generous donations of individuals, organizations,
+      //         and government support to keep our goal of delivering accessible
+      //         healthcare alive. Your gift, together with government assistance,
+      //         allows us to continue our commitment to promoting health for all.
+      //         We can have a tremendous impact on the well-being of our community
+      //         if we work together.
+      //       </p>
+      //     </div>
+      //     <div
+      //       class="col-md-5 d-flex flex-column justify-content-center align-items-center"
+      //     >
+      //       <img
+      //         src="images/mental-health.jpg"
+      //         alt="affordability"
+      //         class="img-fluid"
+      //       />
+      //       <h3 class="py-5 px-5">MENTAL HEALTH SUPPORT</h3>
+      //       <p class="px-5">
+      //         We rely on the generous donations of individuals, organizations,
+      //         and government support to keep our goal of delivering accessible
+      //         healthcare alive. Your gift, together with government assistance,
+      //         allows us to continue our commitment to promoting health for all.
+      //         We can have a tremendous impact on the well-being of our community
+      //         if we work together.
+      //       </p>
+      //     </div>
+      //   </div>
+      //   <div class="row d-flex justify-content-center align-items-center">
+      //     <div
+      //       class="col-md-5 d-flex flex-column justify-content-center align-items-center"
+      //     >
+      //       <img
+      //         src="images/health-education.jpg"
+      //         alt="affordability"
+      //         class="img-fluid pb-5 mt-5"
+      //       />
+      //       <h3 class="py-5 px-5 mt-3">HEALTH EDUCATION</h3>
+      //       <p class="px-5">
+      //         We rely on the generous donations of individuals, organizations,
+      //         and government support to keep our goal of delivering accessible
+      //         healthcare alive. Your gift, together with government assistance,
+      //         allows us to continue our commitment to promoting health for all.
+      //         We can have a tremendous impact on the well-being of our community
+      //         if we work together.
+      //       </p>
+      //     </div>
+      //     <div
+      //       class="col-md-5 d-flex flex-column justify-content-center align-items-center"
+      //     >
+      //       <img
+      //         src="images/advocacy.jpg"
+      //         alt="affordability"
+      //         class="img-fluid"
+      //       />
+      //       <h3 class="py-5 px-5">ADVOCACY</h3>
+      //       <p class="px-5">
+      //         We rely on the generous donations of individuals, organizations,
+      //         and government support to keep our goal of delivering accessible
+      //         healthcare alive. Your gift, together with government assistance,
+      //         allows us to continue our commitment to promoting health for all.
+      //         We can have a tremendous impact on the well-being of our community
+      //         if we work together.
+      //       </p>
+      //     </div>
+      //   </div>
+      // </section>
+
+      affordability.parentElement.removeChild(affordability);
+
+      const newaffordability = document.createElement("section");
+      newaffordability.classList.add(
+        "affordability",
+        "px-5",
+        "mx-5",
+        "py-5",
+        "my-5"
+      );
+      main.insertBefore(newaffordability, contact);
+
+      const row1 = document.createElement("div");
+      row1.classList.add("row", "d-flex", "justify-content-center");
+      newaffordability.appendChild(row1);
+
+      const col1 = document.createElement("div");
+      col1.classList.add(
+        "col-md-5",
+        "d-flex",
+        "flex-column",
+        "justify-content-center",
+        "align-items-center"
+      );
+      row1.appendChild(col1);
+
+      const img1 = document.createElement("img");
+      img1.classList.add("img-fluid");
+      img1.src = "images/primary-healthcare.jpg";
+      img1.alt = "affordability";
+      col1.appendChild(img1);
+
+      const subTitle1 = document.createElement("h3");
+      subTitle1.classList.add("py-5", "px-5");
+      subTitle1.innerText = "PRIMARY HEALTH CARE";
+      col1.appendChild(subTitle1);
+
+      const paragraph1 = document.createElement("p");
+      paragraph1.classList.add("px-5");
+      paragraph1.innerText =
+        "We rely on the generous donations of individuals, organizations, and government support to keep our goal of delivering accessible healthcare alive. Your gift, together with government assistance, allows us to continue our commitment to promoting health for all. We can have a tremendous impact on the well-being of our community if we work together.";
+      col1.appendChild(paragraph1);
+
+      const col2 = document.createElement("div");
+
+      col2.classList.add(
+        "col-md-5",
+        "d-flex",
+        "flex-column",
+        "justify-content-center",
+        "align-items-center"
+      );
+      row1.appendChild(col2);
+
+      const img2 = document.createElement("img");
+      img2.classList.add("img-fluid");
+      img2.src = "images/mental-health.jpg";
+      img2.alt = "affordability";
+      col2.appendChild(img2);
+
+      const subTitle2 = document.createElement("h3");
+      subTitle2.classList.add("py-5", "px-5");
+      subTitle2.innerText = "MENTAL HEALTH SUPPORT";
+      col2.appendChild(subTitle2);
+
+      const paragraph2 = document.createElement("p");
+      paragraph2.classList.add("px-5");
+      paragraph2.innerText =
+        "We rely on the generous donations of individuals, organizations, and government support to keep our goal of delivering accessible healthcare alive. Your gift, together with government assistance, allows us to continue our commitment to promoting health for all. We can have a tremendous impact on the well-being of our community if we work together.";
+      col2.appendChild(paragraph2);
+
+      const row2 = document.createElement("div");
+      row2.classList.add("row", "d-flex", "justify-content-center");
+      newaffordability.appendChild(row2);
+
+      const col3 = document.createElement("div");
+      col3.classList.add(
+        "col-md-5",
+        "d-flex",
+        "flex-column",
+        "justify-content-center",
+        "align-items-center"
+      );
+      row2.appendChild(col3);
+
+      const img3 = document.createElement("img");
+      img3.classList.add("img-fluid", "pb-5", "mt-5");
+      img3.src = "images/health-education.jpg";
+      img3.alt = "affordability";
+      col3.appendChild(img3);
+
+      const subTitle3 = document.createElement("h3");
+      subTitle3.classList.add("py-5", "px-5", "mt-3");
+      subTitle3.innerText = "HEALTH EDUCATION";
+      col3.appendChild(subTitle3);
+
+      const paragraph3 = document.createElement("p");
+      paragraph3.classList.add("px-5");
+      paragraph3.innerText =
+        "We rely on the generous donations of individuals, organizations, and government support to keep our goal of delivering accessible healthcare alive. Your gift, together with government assistance, allows us to continue our commitment to promoting health for all. We can have a tremendous impact on the well-being of our community if we work together.";
+      col3.appendChild(paragraph3);
+
+      const col4 = document.createElement("div");
+      col4.classList.add(
+        "col-md-5",
+        "d-flex",
+        "flex-column",
+        "justify-content-center",
+        "align-items-center"
+      );
+      row2.appendChild(col4);
+
+      const img4 = document.createElement("img");
+      img4.classList.add("img-fluid");
+      img4.src = "images/advocacy.jpg";
+      img4.alt = "affordability";
+      col4.appendChild(img4);
+
+      const subTitle4 = document.createElement("h3");
+      subTitle4.classList.add("py-5", "px-5");
+      subTitle4.innerText = "ADVOCACY";
+      col4.appendChild(subTitle4);
+
+      const paragraph4 = document.createElement("p");
+      paragraph4.classList.add("px-5");
+      paragraph4.innerText =
+        "We rely on the generous donations of individuals, organizations, and government support to keep our goal of delivering accessible healthcare alive. Your gift, together with government assistance, allows us to continue our commitment to promoting health for all. We can have a tremendous impact on the well-being of our community if we work together.";
+      col4.appendChild(paragraph4);
     } else if (i === 2) {
       //   <div class="who-content mb-5 text-white px-5">
       //   <h2 class="py-5 text-center">PARTNERSHIP STRATEGY</h2>
