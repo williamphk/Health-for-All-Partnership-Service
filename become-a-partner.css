@@ -29,7 +29,7 @@ header > div:first-child a.btn {
   font-weight: 700;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 
 header > div:first-child button.btn:hover {
