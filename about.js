@@ -310,7 +310,7 @@ for (let i = 0; i < trapezoids.length; i++) {
       row1.appendChild(col1);
 
       const img1 = document.createElement("img");
-      img1.classList.add("img-fluid");
+      img1.classList.add("img-fluid", "affordability-img");
       img1.src = "images/primary-healthcare.jpg";
       img1.alt = "affordability";
       col1.appendChild(img1);
@@ -338,7 +338,7 @@ for (let i = 0; i < trapezoids.length; i++) {
       row1.appendChild(col2);
 
       const img2 = document.createElement("img");
-      img2.classList.add("img-fluid");
+      img2.classList.add("img-fluid", "affordability-img");
       img2.src = "images/mental-health.jpg";
       img2.alt = "affordability";
       col2.appendChild(img2);
@@ -369,13 +369,13 @@ for (let i = 0; i < trapezoids.length; i++) {
       row2.appendChild(col3);
 
       const img3 = document.createElement("img");
-      img3.classList.add("img-fluid", "pb-5", "mt-5");
+      img3.classList.add("img-fluid", "mt-5", "affordability-img");
       img3.src = "images/health-education.jpg";
       img3.alt = "affordability";
       col3.appendChild(img3);
 
       const subTitle3 = document.createElement("h3");
-      subTitle3.classList.add("py-5", "px-5", "mt-3");
+      subTitle3.classList.add("py-5", "px-5");
       subTitle3.innerText = "HEALTH EDUCATION";
       col3.appendChild(subTitle3);
 
@@ -396,7 +396,7 @@ for (let i = 0; i < trapezoids.length; i++) {
       row2.appendChild(col4);
 
       const img4 = document.createElement("img");
-      img4.classList.add("img-fluid");
+      img4.classList.add("img-fluid", "affordability-img");
       img4.src = "images/advocacy.jpg";
       img4.alt = "affordability";
       col4.appendChild(img4);

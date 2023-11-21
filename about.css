@@ -263,6 +263,10 @@ p {
   top: -80px;
 }
 
+.affordability-img {
+  width: 250px;
+}
+
 .contact {
   position: relative;
   height: 490px;
