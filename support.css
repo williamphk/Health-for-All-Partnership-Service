@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Inter:wght@300;400&family=Raleway:wght@700&display=swap");
+
+header {
+  position: absolute;
+  top: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header > div:first-child {
+  background-color: hsla(0, 0%, 100%, 0.701);
+  border-radius: 93px;
+}
+
+header > div:first-child a.btn {
+  border-radius: 25px;
+  background-color: #063b3f;
+  color: #fff;
+  width: 180px;
+  text-wrap: wrap;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div:first-child a.btn:hover {
+  background-color: rgb(6, 67, 71);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo {
+    height: 40px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #d1d1d1;
+}
+
+.dropdown-menu {
+  border-radius: 11px;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.share-btn {
+  background-color: #ffffff40;
+  color: black;
+  border-radius: 21px;
+  width: 170px;
+  border: none;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 50px;
+}
+
+.search-btn {
+  white-space: nowrap;
+  font-size: 20px;
+  width: 100px;
+  height: 25px;
+  color: #ffffff;
+}
+
+.login-btn {
+  white-space: nowrap;
+  font-size: 20px;
+  width: 170px;
+  height: 25px;
+  color: #ffffff;
+}
+
+.search-btn:hover,
+.login-btn:hover {
+  cursor: pointer;
+  color: #555555;
+}
+
+.share-btn:hover {
+  animation: wider 0.75s forwards;
+}
+
+@keyframes wider {
+  0% {
+    width: 170px;
+    font-size: 20px;
+  }
+
+  100% {
+    width: 250px;
+    font-size: 15px;
+  }
+}
+
+@keyframes narrower {
+  0% {
+    width: 250px;
+    font-size: 15px;
+  }
+  100% {
+    width: 170px;
+    font-size: 20px;
+  }
+}
+
+.share-btn.reverse {
+  animation: narrower 0.5s forwards;
+}
+
+#mobile-menu {
+  background-color: #09565b;
+}
+
+#navbarToggleExternalContent > div {
+  z-index: 999;
+  background-color: #031d1fe2;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(14, 104, 111, 0) 30%,
+      rgba(7, 62, 66, 0.92) 100%
+    ),
+    url("images/support_bg.png");
+  background-size: cover;
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding-top: 120px;
+  }
+}
+
+.hero > div {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5%;
+}
+
+.hero > div > h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero > div {
+    margin-left: 0;
+    margin-top: 2%;
+  }
+}
+
+.cta-btn {
+  background-color: #65c5b9;
+  width: 355px;
+  border-radius: 33.28px;
+}
+
+.ml-20 {
+  margin-left: 20%;
+}
+
+p {
+  font-size: 21px;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+footer {
+  font-size: 20px;
+}
+
+.people-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.people-icon img {
+  height: 65px;
+}
+
+@media only screen and (max-width: 1400px) {
+  footer img {
+    height: 55px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer img {
+    height: 45px;
+  }
+}
