@@ -138,6 +138,26 @@ header > div:first-child button.btn:hover {
 
 section {
   min-height: 100vh;
+  padding-top: 330px;
+  background-color: #fbf8ed;
+}
+
+.btn {
+  border-radius: 27.5px;
+  border: none;
+  background-color: #65c5b9;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  width: 255px;
+  height: 55px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+section img {
+  max-height: 400px;
 }
 
 p {
