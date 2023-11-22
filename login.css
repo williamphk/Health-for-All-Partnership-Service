@@ -30,7 +30,7 @@ header > div:first-child a.btn {
   align-items: center;
 }
 
-header > div:first-child button.btn:hover {
+header > div:first-child a.btn:hover {
   background-color: #09565b;
   cursor: pointer;
 }

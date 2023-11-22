@@ -31,7 +31,7 @@ header > div:first-child a.btn {
 }
 
 header > div:first-child a.btn:hover {
-  background-color: rgb(6, 67, 71);
+  background-color: #09565b;
   cursor: pointer;
 }
 
