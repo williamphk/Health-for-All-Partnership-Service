@@ -173,16 +173,6 @@ header > div:first-child a.btn:hover {
   }
 }
 
-.cta-btn {
-  background-color: #65c5b9;
-  width: 355px;
-  border-radius: 33.28px;
-}
-
-.ml-20 {
-  margin-left: 20%;
-}
-
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;
@@ -193,6 +183,11 @@ p {
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter";
+}
+
+.banner {
+  background: linear-gradient(to left, #0f6d74 100%, #063b3f 100%);
+  font-size: 25px;
 }
 
 footer {
