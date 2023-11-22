@@ -142,6 +142,15 @@ header > div:first-child a.btn:hover {
   background-color: #fbf8ed;
 }
 
+@media only screen and (max-width: 992px) {
+  .application {
+    padding-top: 160px;
+  }
+  .application p {
+    font-size: 16px;
+  }
+}
+
 .application .btn {
   border-radius: 27.5px;
   border: none;
