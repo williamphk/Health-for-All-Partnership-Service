@@ -160,6 +160,14 @@ header > div:first-child button.btn:hover {
   max-height: 400px;
 }
 
+.banner {
+  background-image: linear-gradient(to right, #063b3f 30%, #0f6d74 100%);
+}
+
+.banner img {
+  max-width: 135px;
+}
+
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;
