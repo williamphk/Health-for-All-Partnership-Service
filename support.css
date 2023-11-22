@@ -189,6 +189,13 @@ p {
 .banner {
   background: linear-gradient(to left, #0f6d74 100%, #063b3f 100%);
   font-size: 25px;
+  position: relative;
+  top: -69px;
+}
+
+.contact {
+  position: relative;
+  top: -69px;
 }
 
 .information {
@@ -198,6 +205,24 @@ p {
 
 .information a {
   font-size: 21px;
+}
+
+.collaboration {
+  min-height: 70vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fbf8ed;
+  position: relative;
+  top: -69px;
+}
+
+.collaboration a {
+  text-decoration: underline !important;
+  font-size: 24px;
+}
+
+.collaboration img {
+  max-height: 400px;
 }
 
 footer {
