@@ -158,6 +158,11 @@ header > div:first-child a.btn:hover {
   align-self: center;
 }
 
+.login-form button:hover {
+  background-color: #57aca2;
+  cursor: pointer;
+}
+
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;

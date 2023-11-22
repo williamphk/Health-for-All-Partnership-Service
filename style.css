@@ -170,6 +170,10 @@ header > div:first-child a.btn:hover {
   border-radius: 33.28px;
 }
 
+.cta-btn:hover {
+  background-color: #57aca2;
+}
+
 .service-image-wrapper {
   margin-top: 150px;
 }

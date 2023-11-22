@@ -156,6 +156,11 @@ header > div:first-child a.btn:hover {
   align-self: center;
 }
 
+.application .btn:hover {
+  background-color: #57aca2;
+  cursor: pointer;
+}
+
 .application img {
   max-height: 400px;
 }
