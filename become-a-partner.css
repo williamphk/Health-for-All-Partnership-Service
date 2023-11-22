@@ -136,13 +136,13 @@ header > div:first-child button.btn:hover {
   background-color: #031d1fe2;
 }
 
-section {
+.application {
   min-height: 100vh;
   padding-top: 330px;
   background-color: #fbf8ed;
 }
 
-.btn {
+.application .btn {
   border-radius: 27.5px;
   border: none;
   background-color: #65c5b9;
@@ -156,7 +156,7 @@ section {
   align-self: center;
 }
 
-section img {
+.application img {
   max-height: 400px;
 }
 
