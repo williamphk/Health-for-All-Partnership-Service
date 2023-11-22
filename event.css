@@ -169,8 +169,6 @@ p {
 .banner {
   background: #21353f;
   font-size: 25px;
-  position: relative;
-  top: -69px;
 }
 
 .content {
@@ -178,8 +176,6 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #f4f4f4;
-  position: relative;
-  top: -69px;
 }
 
 .content a {
