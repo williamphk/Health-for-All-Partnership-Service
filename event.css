@@ -206,6 +206,11 @@ p {
   background-color: #21353f;
   border-radius: 18.62px;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.event:hover {
+  color: #bebebe;
 }
 
 .event > div {

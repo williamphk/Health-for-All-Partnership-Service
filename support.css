@@ -234,6 +234,10 @@ p {
   color: #ffffff;
 }
 
+.event:hover {
+  color: #bebebe;
+}
+
 .event > div {
   padding: 20px 45px;
   text-align: center;
