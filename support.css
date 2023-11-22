@@ -176,6 +176,7 @@ header > div:first-child a.btn:hover {
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;
+  margin-bottom: 0;
 }
 
 * {
@@ -188,6 +189,15 @@ p {
 .banner {
   background: linear-gradient(to left, #0f6d74 100%, #063b3f 100%);
   font-size: 25px;
+}
+
+.information {
+  background-color: #d6efeb;
+  padding-left: 200px;
+}
+
+.information a {
+  font-size: 21px;
 }
 
 footer {
