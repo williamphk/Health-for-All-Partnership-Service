@@ -168,6 +168,20 @@ header > div:first-child button.btn:hover {
   max-width: 135px;
 }
 
+.contact {
+  background-color: #f4f4f4;
+}
+
+.contact img {
+  height: 75px;
+  width: 75px;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  margin: 25px;
+}
+
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;
