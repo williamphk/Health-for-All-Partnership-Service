@@ -141,6 +141,18 @@ header > div:first-child button.btn:hover {
   padding-top: 330px;
 }
 
+.hero a {
+  color: #0000007c;
+}
+
+.hero h2 {
+  color: #969696;
+}
+
+.hero p {
+  color: #bdbdbd;
+}
+
 p {
   font-size: 21px;
   font-family: "Inter", sans-serif;
