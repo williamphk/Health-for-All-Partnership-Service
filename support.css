@@ -203,6 +203,24 @@ p {
   padding-left: 200px;
 }
 
+@media screen and (max-width: 1400px) {
+  .information {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .information {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .information {
+    padding-left: 0;
+  }
+}
+
 .information a {
   font-size: 21px;
 }
