@@ -176,6 +176,17 @@ header > div:first-child a.btn:hover {
   max-height: 400px;
 }
 
+@media only screen and (max-width: 767px) {
+  .application img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .application .btn {
+    margin: 30px auto;
+  }
+}
+
 .banner {
   background-image: linear-gradient(to right, #063b3f 30%, #0f6d74 100%);
 }
@@ -196,10 +207,6 @@ header > div:first-child a.btn:hover {
     position: absolute;
     top: -180px;
   }
-  /* .banner > div:nth-child(2) > div:nth-child(5) {
-    position: relative;
-    top: -50px;
-  } */
 }
 
 .contact {
