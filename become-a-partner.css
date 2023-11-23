@@ -185,18 +185,21 @@ header > div:first-child a.btn:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  .banner > div:nth-child(2) > div:nth-child(1) {
+  .banner > div:nth-child(2) {
     position: relative;
-    top: -400px;
+  }
+  .banner > div:nth-child(2) > div:nth-child(1) {
+    position: absolute;
+    top: -410px;
   }
   .banner > div:nth-child(2) > div:nth-child(3) {
-    position: relative;
-    top: -200px;
+    position: absolute;
+    top: -180px;
   }
-  .banner > div:nth-child(2) > div:nth-child(5) {
+  /* .banner > div:nth-child(2) > div:nth-child(5) {
     position: relative;
     top: -50px;
-  }
+  } */
 }
 
 .contact {
