@@ -162,7 +162,9 @@ header > div:first-child a.btn:hover {
   height: 55px;
   margin-top: 20px;
   margin-bottom: 20px;
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .application .btn:hover {

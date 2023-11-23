@@ -137,11 +137,24 @@ header > div:first-child a.btn:hover {
 .login-form {
   min-height: 100vh;
   background: linear-gradient(to bottom, #0f6d74, #063b3f00);
-  padding-top: 250px;
+  padding-top: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  .login-form {
+    padding-top: 160px;
+  }
 }
 
 .add-border {
   border-right: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 796px) {
+  .add-border {
+    border-right: none;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 .login-form button {
