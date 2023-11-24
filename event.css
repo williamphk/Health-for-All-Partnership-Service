@@ -141,6 +141,12 @@ header > div:first-child a.btn:hover {
   padding-top: 330px;
 }
 
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding-top: 150px;
+  }
+}
+
 .hero a {
   color: #0000007c;
 }
@@ -195,6 +201,13 @@ p {
 
 .content img {
   max-height: 400px;
+}
+
+@media screen and (max-width: 1355px) {
+  .events > div {
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .event {
