@@ -238,6 +238,17 @@ p {
   max-height: 400px;
 }
 
+@media only screen and (max-width: 767px) {
+  .collaboration img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .collaboration > div:nth-child(2) > div:nth-child(1) > div {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1170px) {
   .banner,
   .contact,
