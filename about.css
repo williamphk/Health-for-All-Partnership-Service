@@ -283,7 +283,13 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .affordability {
+    height: auto;
+    top: 70px;
+    margin-bottom: 50px;
+  }
   .contact {
+    position: static;
     height: auto;
   }
 }
