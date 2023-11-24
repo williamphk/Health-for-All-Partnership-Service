@@ -238,6 +238,17 @@ p {
   max-height: 400px;
 }
 
+@media screen and (max-width: 1170px) {
+  .banner,
+  .contact,
+  .collaboration {
+    position: static;
+  }
+  .events {
+    padding-top: 50px;
+  }
+}
+
 @media screen and (max-width: 1355px) {
   .events > div {
     row-gap: 20px;
