@@ -43,13 +43,8 @@ header > div:first-child a.btn:hover {
   }
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: rgb(0, 0, 0);
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-  color: #d1d1d1;
 }
 
 .dropdown-menu {
