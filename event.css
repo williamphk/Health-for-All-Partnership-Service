@@ -144,6 +144,7 @@ header > div:first-child a.btn:hover {
 @media only screen and (max-width: 992px) {
   .hero {
     padding-top: 150px;
+    min-height: 60vh;
   }
 }
 
@@ -175,6 +176,7 @@ p {
 .banner {
   background: #21353f;
   font-size: 25px;
+  overflow: hidden;
 }
 
 .content {
