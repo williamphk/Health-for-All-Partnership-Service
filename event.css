@@ -181,8 +181,8 @@ p {
 
 .content {
   min-height: 30vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   background-color: #f4f4f4;
 }
 
@@ -199,6 +199,12 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding-bottom: 40px;
+  }
 }
 
 .content img {
