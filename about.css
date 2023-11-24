@@ -249,7 +249,7 @@ p {
 }
 
 .who-content {
-  height: 92%;
+  min-height: 92%;
   background-color: #0f6d74;
   position: relative;
   top: -12px;
@@ -280,6 +280,12 @@ p {
   display: inline-block;
   background-color: #fff;
   margin: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    height: auto;
+  }
 }
 
 footer {
