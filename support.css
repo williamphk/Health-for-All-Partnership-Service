@@ -244,6 +244,13 @@ p {
   max-height: 400px;
 }
 
+@media screen and (max-width: 1355px) {
+  .events > div {
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
 .event {
   width: 430px;
   background-color: #21353f;
