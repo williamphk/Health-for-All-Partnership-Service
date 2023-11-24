@@ -215,12 +215,6 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .information {
-    padding-left: 0;
-  }
-}
-
 .information a {
   font-size: 21px;
 }
