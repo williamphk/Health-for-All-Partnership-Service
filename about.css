@@ -212,6 +212,26 @@ p {
   font-size: 26px;
   font-weight: 700;
   cursor: pointer;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .trapezoid-wrapper {
+    gap: 0px;
+  }
+  .trapezoid {
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .trapezoid {
+    width: 300px;
+    height: 50px;
+    font-size: 12px;
+  }
 }
 
 .trapezoid::before,
@@ -303,6 +323,7 @@ footer {
   bottom: 25px;
   right: 25px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .people-icon img {
