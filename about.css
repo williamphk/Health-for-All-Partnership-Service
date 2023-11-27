@@ -276,7 +276,7 @@ p {
 }
 
 .affordability {
-  min-height: 100vh;
+  min-height: 70vh;
   position: relative;
   top: -80px;
 }
