@@ -132,8 +132,9 @@ header > div:first-child a.btn:hover {
 }
 
 .hero {
-  min-height: 70vh;
+  min-height: 30vh;
   padding-top: 330px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
